@@ -1,0 +1,200 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/icons for icons options
+
+title: "TWIO - Apps Dashboard"
+subtitle: "TimWhite.io"
+#logo: "logo.png"
+#icon: "fas fa-code-fork" # Optional icon
+
+header: false
+footer: false
+
+# Optional theme customization
+theme: default
+colors:
+  light:
+    highlight-primary: "#3f4e43"
+    highlight-secondary: "#3f4e43"
+    highlight-hover: "#5a95f5"
+    background: "#f5f5f5"
+    card-background: "#ffffff"
+    text: "#363636"
+    text-header: "#ffffff"
+    text-title: "#303030"
+    text-subtitle: "#424242"
+    card-shadow: rgba(0, 0, 0, 0.1)
+    link-hover: "#363636"
+  dark:
+    highlight-primary: "#3f4e43"
+    highlight-secondary: "#3f4e43"
+    highlight-hover: "#3f4e43"
+    background: "#131313"
+    card-background: "#2b2b2b"
+    text: "#eaeaea"
+    text-header: "#ffffff"
+    text-title: "#fafafa"
+    text-subtitle: "#f5f5f5"
+    card-shadow: rgba(0, 0, 0, 0.4)
+    link-hover: "#ffdd57"
+    background-image: "backgrounds/green-stairs.jpg"
+
+# Optional message
+#message:
+  #url: https://b4bz.io
+#  style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
+#  title: "Demo !"
+#  icon: "fa fa-grin"
+#  content: "This is a dummy homepage demo. <br /> Find more information on <a href='https://github.com/bastienwirtz/homer'>github.com/bastienwirtz/homer</a>"
+
+# Optional navbar
+# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+# links:
+#   - name: "Contribute"
+#     icon: "fab fa-github"
+#
+#   - name: "Wiki"
+#     icon: "fas fa-book"
+#
+#   # this will link to a second homer page that will load config from additionnal-page.yml and keep default config values as in config.yml file
+#   # see url field and assets/additionnal-page.yml.dist used in this example:
+#   - name: "another page!"
+#     icon: "fas fa-file-alt"
+#
+
+
+stylesheet:
+  - "assets/custom.css"
+
+# Services
+# First level array represent a group.
+# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+services:
+  - name: "Notes & Content Management"
+    icon: "fas fa-cloud"
+    items:
+      - name: "TimWhite.io"
+        logo: "assets/icons/favicon.ico"
+        subtitle: "PicoCMS blog site - View"
+        tag: "app #public"
+        url: "https://timwhite.io"
+
+      - name: "PasteBin"
+        logo: "assets/icons/pastebin_logo_side_outline.png"
+        subtitle: "Zero-knowledge Pastebin"
+        tag: "app #public"
+        url: "https://paste.timwhite.io"
+
+      - name: "StandardNotes"
+        logo: "assets/tools/sample2.png"
+        subtitle: "Standard Notes; self-hosted notes, public web-app interface"
+        tag: "app #nextcloud"
+        url: "https://app.standardnotes.org"
+
+      - name: "DokuWiki"
+        logo: "assets/icons/doku-logo.png"
+        subtitle: "Non-Database Wiki Software"
+        tag: "app"
+        url: "https://wiki.timwhite.io"
+
+  - name: "Time & Task Management"
+    icon: "fas fa-cloud"
+    items:
+      - name: "Deck"
+        logo: "assets/icons/deck.svg"
+        subtitle: "Kanban/Trello alternative"
+        tag: "app #nextcloud"
+        url: "https://deck.timwhite.io"
+
+      - name: "Tasks"
+        logo: "assets/icons/tasks.svg"
+        subtitle: "Kanboard Project Management Software"
+        tag: "app"
+        url: "https://tasks.timwhite.io"
+
+      - name: "Calendar"
+        logo: "assets/icons/calendar.svg"
+        subtitle: "Nextcloud Default Calendar App"
+        tag: "app #nextcloud"
+        url: "https://calendar.timwhite.io"
+
+      - name: "ProtonMail"
+        logo: "assets/icons/protonmail.png"
+        subtitle: "Email Host"
+        tag: "email #external"
+        url: "https://mail.timwhite.io"
+
+  - name: "Media & Entertainment"
+    icon: "fas fa-cloud"
+    items:
+      - name: "FreshRSS"
+        logo: "assets/icons/freshrss.png"
+        subtitle: "RSS Aggregate"
+        tag: "app"
+        url: "https://rss.timwhite.io"
+      - name: "Interesting Websites wiki.twio"
+        logo: "assets/tools/sample2.png"
+        subtitle: "Reading materials"
+        tag: "app"
+        url: "https://wiki.timwhite.io/doku.php?id=interesting_websites"
+
+  - name: "Data Storage"
+    icon: "fas fa-cloud"
+    items:
+      - name: "Photos"
+        logo: "assets/icons/photos.svg"
+        subtitle: "Nextcloud Default Photos App"
+        tag: "#nextcloud"
+        url: "https://photos.timwhite.io"
+
+      - name: "Files"
+        logo: "assets/tools/sample2.png"
+        subtitle: "Nextcloud Default Files App"
+        tag: "app #nextcloud"
+        url: "https://files.timwhite.io"
+
+      # - name: "Contacts"
+      #   logo: "assets/tools/sample2.png"
+      #   subtitle: "Nextcloud Default Contacts App"
+      #   tag: "app #nextcloud"
+      #   url: "https://contacts.timwhite.io"
+
+      - name: "Home"
+        logo: "assets/tools/sample2.png"
+        subtitle: "Nextcloud Instance"
+        tag: "app #nextcloud"
+        url: "https://cloud.timwhite.io"
+
+  - name: "Home Automation"
+    icon: "fas fa-cloud"
+    items:
+
+      - name: "Bedroom Plant Lights"
+        logo: "assets/tools/sample2.png"
+        subtitle: "Web interface for Raspberry-Pi controlled bedroom lights"
+        tag: "app #local"
+        url: "http://192.168.1.84/"
+
+
+
+  - name: "Server Maintenance"
+    icon: "fas fa-cloud"
+    items:
+
+      - name: "Hetzner"
+        logo: "assets/icons/hetzner.jpg"
+        subtitle: "Virtual Private Server host - dashboard"
+        tag: "app #external"
+        url: "https://console.hetzner.cloud/"
+
+      - name: "Namecheap"
+        logo: "assets/icons/namecheap.jpg"
+        subtitle: "DNS Registrar and Records"
+        tag: "app #external"
+        url: "https://www.namecheap.com/"
+
+      - name: "Asus Router"
+        logo: "assets/icons/Asuswrt-Merlin-smaller.png"
+        subtitle: "DNS Registrar and Records (no VPN)"
+        tag: "app #external"
+        url: "https://192.168.1.1:8443"
